@@ -17,23 +17,335 @@ rewards: # note this plugin will not work if day 1 is not present
       meta: "0"
       count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
     commands: # commands to execute when the player claims it
-    - 'c: givemoney %p% 50' # execute command as console you can use %p% for player name and %day% for streak
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
     - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
     - 'p: mymoney' # execute command as player with normal privilege
     massages: # massages things to tell the player after they claimed
     - '&6Rewards > &fThanks for claiming on your %day% streak'
     announce: # announce things to tell the server's player after they claimed
     - '&6Rewards > &f%p% claimed for their %day% day'
-  5: #next reward
-    items:
+  2: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
     - id: "15"
-      count: "0-%day%"
-    - id: "56"
-      count: "0-5"
-    commands:
-    - 'c: givemoney %p% %day%0'
-    massages:
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
     - '&6Rewards > &fThanks for claiming on your %day% streak'
-    announce:
-    - '&6Rewards > &f%p% claimed for their %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 3: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 4: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 5: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 6: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 7: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 8: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 9: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 10: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 11: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 12: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 13: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 15: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 16: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 17: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 18: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 19: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
+ 20: # number will be the days if present number is not found it will automatically fall back to the last one
+    items: # items to give to player
+    - id: "6" #* item id
+      meta: "0" # meta
+      count: '1-5' # count min-max for random exact for exactly the amount and empty for 1
+    - id: "4"
+      count: "16-32"
+    - id: "15"
+      meta: "0"
+      count: '0-%day%' # you can also use %day% day will be replaced to the current streak of the player
+    commands: # commands to execute when the player claims it
+    - 'c: mysterybox add "%p" holiday 1' # execute command as console you can use %p% for player name and %day% for streak
+    - 'op: say testing' # execute command as player WITH OP privilege PLEASE NOTE that this is highly dangerous and exeperimental do not use it when possible
+    - 'p: mymoney' # execute command as player with normal privilege
+    massages: # massages things to tell the player after they claimed
+    - '&6Rewards > &fThanks for claiming on your %day% streak'
+    announce: # announce things to tell the server's player after they claimed
+    - '&6Rewards > &f%p% claimed for their %day% day'
 ...
