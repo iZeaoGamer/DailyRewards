@@ -180,7 +180,9 @@ class Loader extends PluginBase
     if (($day = $this->getDatDay($name)) > 0)
       if (!$this->streakNeedReset($name)) $msg .= " your streak of $day will expire in " . $this->secToTime(abs($this->getClaimTime($name)));
       else $msg .= " your streak of $day have expired {$this->secToTime(abs($this->getClaimTime($name)))} before";
-    $msg .= " /claim to claim it now!";
+    $this->setClaim($name);
+            $this->giveReward($player);
+    $msg .= " Claimed reward.";
     $player->sendMessage($msg);
   }
 
